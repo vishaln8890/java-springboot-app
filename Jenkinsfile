@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'yourdockerhubusername/springboot-demo'
-        DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
-        GIT_CREDENTIALS_ID = 'github-credentials-id'
+        IMAGE_NAME = 'vishaln8890/java-springboot-app'
+        DOCKER_CREDENTIALS_ID = 'vishaln8890@gmail.com'
+        GIT_CREDENTIALS_ID = 'tr!m$MRP@90909'
     }
 
     stages {
@@ -13,7 +13,7 @@ pipeline {
                 checkout([$class: 'GitSCM',
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/yourusername/my-springboot-app.git',
+                        url: 'https://github.com/vishaln8890/java-springboot-app.git',
                         credentialsId: "${GIT_CREDENTIALS_ID}"
                     ]]
                 ])
