@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'vishaln8890/java-springboot-app'
         DOCKER_CREDENTIALS_ID = 'vishaln8890@gmail.com'
-        GIT_CREDENTIALS_ID = 'vishaln8890'
+        GIT_CREDENTIALS_ID = 'vishaln8890@gmail.com'
     }
 
     stages {
